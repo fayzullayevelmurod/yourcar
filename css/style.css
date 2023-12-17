@@ -1,3 +1,53 @@
-body {
-  background-color: black;
+* {
+  font-family: "Inter";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0 !important;
+}
+
+.header {
+  background-color: #2A323A;
+  padding: 21px 0;
+}
+.header .container .header_wrapper .header_links {
+  gap: 57px;
+}
+.header .container .header_wrapper .header_links li a {
+  color: white;
+  text-decoration: none;
+}
+.header .container .header_wrapper .header_login a {
+  color: white;
+}
+
+.home {
+  background-image: url(/images/home_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 559px;
+}
+.home .container .home_wrapper {
+  padding-top: 68px;
+}
+.home .container .home_wrapper h1 {
+  font-size: 46px;
+  font-family: "Habibi";
+  color: white;
+}
+.home .container .home_wrapper .home_link {
+  font-size: 18px;
+  color: white;
+}
+.home .container .home_wrapper .home_link img {
+  margin-left: 13px;
 }/*# sourceMappingURL=style.css.map */
