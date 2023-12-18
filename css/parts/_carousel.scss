@@ -1,0 +1,89 @@
+.carousel {
+  background-color: #2a323a;
+  padding: 93px 0;
+  .carousel_title {
+    color: white;
+    text-align: center;
+    padding-bottom: 75px;
+  }
+  .swiper-wrapper {
+    .swiper-slide {
+      display: grid;
+      grid-template-columns: auto auto;
+      .swiper_img {
+        img {
+          width: 100%;
+        }
+      }
+      .about_car {
+        margin-left: 88px;
+        color: white;
+        position: relative;
+        h4 {
+          font-size: 26.021px;
+          font-weight: 600;
+          margin-bottom: 39px;
+        }
+        .car_p {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          p {
+            font-size: 22px;
+            font-weight: 500;
+          }
+        }
+        .about_car_link {
+          position: absolute;
+          bottom: 30px;
+          margin-top: 112px;
+          a {
+            color: white;
+            font-size: 18.79px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .swiper-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    .swiper-button-prevv {
+      transform: rotate(-180deg);
+      padding: 20px;
+    }
+    .swiper-button-nextt {
+      padding: 20px;
+    }
+  }
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, 8px);
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: auto !important;
+}
+.swiper-pagination {
+  position: unset !important;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+}
+.swiper-pagination-bullet {
+  width: 14px !important;
+  height: 14px !important;
+  //   display: inline-block;
+  //   border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+  background-color: white !important;
+}
