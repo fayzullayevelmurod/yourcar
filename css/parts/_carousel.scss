@@ -148,6 +148,11 @@
         }
       }
     }
+    .swiper-pagination-bullet {
+      width: 10px !important;
+      height: 10px !important;
+      background-color: white;
+    }
   }
 }
 
@@ -190,17 +195,35 @@
       }
     }
   }
+  .swiper-bottom {
+    .swiper-button-prevv {
+      transform: rotate(-180deg);
+      padding: 20px;
+      img {
+        width: 30px;
+      }
+    }
+    .swiper-button-nextt {
+      padding: 20px;
+      img {
+        width: 30px;
+      }
+    }
+  }
 }
 @media (max-width: 576px) {
   .carousel {
     .swiper-wrapper {
       .swiper-slide {
+        display: flex;
+        flex-direction: column;
         .about_car {
-          margin-left: 20px;
+          margin-left: 0;
+          margin-top: 20px;
           color: white;
           position: relative;
           h4 {
-            font-size: 18px;
+            font-size: 23px;
             font-weight: 600;
             margin-bottom: 15px;
           }
@@ -209,7 +232,7 @@
             flex-direction: column;
             gap: 5px;
             p {
-              font-size: 10px;
+              font-size: 15px;
               font-weight: 500;
             }
           }
@@ -218,7 +241,7 @@
             margin-top: 20px;
             a {
               color: white;
-              font-size: 14px;
+              font-size: 16px;
               font-weight: 400;
               img {
                 width: 20px;
@@ -228,6 +251,11 @@
           }
         }
       }
+    }
+    .swiper-pagination-bullet {
+      width: 10px !important;
+      height: 10px !important;
+      background-color: white;
     }
   }
 }
