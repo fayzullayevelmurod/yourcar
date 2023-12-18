@@ -1,24 +1,48 @@
-.home{
-    background-image: url(/images/home_bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 559px;
-    .container{
-        .home_wrapper{
-            padding-top: 68px;
-            h1{
-                font-size: 46px;
-                font-family: "Habibi";
-                color: white;
-            }
-            .home_link{
-                font-size: 18px;
-                color: white;
-                img{
-                    margin-left: 13px;
-                }
-            }
+.home {
+  background-image: url(/images/home_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+  .container {
+    .home_wrapper {
+      padding-top: 68px;
+      h1 {
+        font-size: 46px;
+        font-family: "Habibi";
+        color: white;
+      }
+      .home_link {
+        font-size: 18px;
+        color: white;
+        img {
+          margin-left: 13px;
         }
+      }
     }
+  }
+}
+@media (max-width: 992px) {
+  .home {
+    .container {
+      .home_wrapper {
+        a {
+          margin-top: 20px;
+          justify-content: left !important;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .home {
+    .container {
+      .home_wrapper {
+        h1 {
+          font-size: 35px;
+        }
+      }
+    }
+  }
 }

@@ -36,7 +36,7 @@
         .about_car_link {
           position: absolute;
           bottom: 30px;
-          margin-top: 112px;
+
           a {
             color: white;
             font-size: 18.79px;
@@ -60,6 +60,177 @@
     }
   }
 }
+@media (max-width: 1200px) {
+  .carousel {
+    padding: 60px 0;
+    .carousel_title {
+      color: white;
+      text-align: center;
+      padding-bottom: 75px;
+    }
+    .swiper-wrapper {
+      .swiper-slide {
+        .swiper_img {
+          img {
+            width: 100%;
+          }
+        }
+        .about_car {
+          margin-left: 80px;
+          color: white;
+          position: relative;
+          h4 {
+            font-size: 26.021px;
+            font-weight: 600;
+            margin-bottom: 20px;
+          }
+          .car_p {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            p {
+              font-size: 18px;
+              font-weight: 500;
+            }
+          }
+          .about_car_link {
+            position: absolute;
+            bottom: 20px;
+            margin-top: 50px;
+            a {
+              color: white;
+              font-size: 18.79px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .carousel {
+    padding: 60px 0;
+    .carousel_title {
+      color: white;
+      text-align: center;
+      padding-bottom: 75px;
+    }
+    .swiper-wrapper {
+      .swiper-slide {
+        .about_car {
+          margin-left: 30px;
+          color: white;
+          position: relative;
+          h4 {
+            font-size: 26.021px;
+            font-weight: 600;
+            margin-bottom: 20px;
+          }
+          .car_p {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            p {
+              font-size: 16px;
+              font-weight: 500;
+            }
+          }
+          .about_car_link {
+            position: unset;
+            margin-top: 30px;
+            a {
+              color: white;
+              font-size: 18.79px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    .swiper-wrapper {
+      .swiper-slide {
+        .about_car {
+          margin-left: 30px;
+          color: white;
+          position: relative;
+          h4 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+          }
+          .car_p {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            p {
+              font-size: 13px;
+              font-weight: 500;
+            }
+          }
+          .about_car_link {
+            position: unset;
+            margin-top: 30px;
+            a {
+              color: white;
+              font-size: 14px;
+              font-weight: 400;
+              img {
+                width: 25px;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .carousel {
+    .swiper-wrapper {
+      .swiper-slide {
+        .about_car {
+          margin-left: 20px;
+          color: white;
+          position: relative;
+          h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+          }
+          .car_p {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            p {
+              font-size: 10px;
+              font-weight: 500;
+            }
+          }
+          .about_car_link {
+            position: unset;
+            margin-top: 20px;
+            a {
+              color: white;
+              font-size: 14px;
+              font-weight: 400;
+              img {
+                width: 20px;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
@@ -77,13 +248,11 @@
   z-index: 10;
 }
 .swiper-pagination-bullet-active {
-  background-color: black !important;
+  background-color: white !important;
   opacity: var(--swiper-pagination-bullet-opacity, 1);
 }
 .swiper-pagination-bullet {
   width: 14px !important;
   height: 14px !important;
-  //   display: inline-block;
-  //   border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
-  background-color: white !important;
+  background-color: white;
 }

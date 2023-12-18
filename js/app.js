@@ -11,3 +11,10 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prevv",
   },
 });
+
+const bars = document.querySelector(".bars");
+const navlink = document.querySelector(".header_links");
+
+bars.addEventListener("click", function () {
+  navlink.classList.toggle("nav_active");
+});

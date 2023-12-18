@@ -3,6 +3,7 @@ body {
 }
 
 * {
+  transition: 0.1s ease;
   font-family: "Inter";
 }
 
@@ -204,7 +205,7 @@ p {
 }
 
 .header {
-  background-color: #2A323A;
+  background-color: #2a323a;
   padding: 21px 0;
 }
 .header .container .header_wrapper .header_links {
@@ -217,13 +218,51 @@ p {
 .header .container .header_wrapper .header_login a {
   color: white;
 }
+.header .container .header_wrapper .header_login .bars {
+  margin-left: 20px;
+  display: none;
+}
 
+@media (max-width: 992px) {
+  .header .container .header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header .container .header_wrapper .header_links {
+    position: fixed;
+    left: -500%;
+    width: 50%;
+    background-color: #2a323a;
+    filter: drop-shadow(-35px 24px 100px #000000);
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+  }
+  .header .container .header_wrapper .nav_active {
+    left: 0 !important;
+  }
+  .header .container .header_wrapper .header_login .bars {
+    display: block;
+    cursor: pointer;
+  }
+}
+@media (max-width: 560px) {
+  .header .container .header_wrapper .header_logo img {
+    width: 120px;
+  }
+  .header .container .header_wrapper .header_links {
+    width: 70%;
+  }
+}
 .home {
   background-image: url(/images/home_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 559px;
+  height: 580px;
 }
 .home .container .home_wrapper {
   padding-top: 68px;
@@ -241,6 +280,18 @@ p {
   margin-left: 13px;
 }
 
+@media (max-width: 992px) {
+  .home .container .home_wrapper a {
+    margin-top: 20px;
+    justify-content: left !important;
+    text-align: left;
+  }
+}
+@media (max-width: 768px) {
+  .home .container .home_wrapper h1 {
+    font-size: 35px;
+  }
+}
 .filter {
   background-color: #384248;
   padding: 116px 0;
@@ -290,7 +341,6 @@ p {
 .carousel .swiper-wrapper .swiper-slide .about_car .about_car_link {
   position: absolute;
   bottom: 30px;
-  margin-top: 112px;
 }
 .carousel .swiper-wrapper .swiper-slide .about_car .about_car_link a {
   color: white;
@@ -311,6 +361,154 @@ p {
   padding: 20px;
 }
 
+@media (max-width: 1200px) {
+  .carousel {
+    padding: 60px 0;
+  }
+  .carousel .carousel_title {
+    color: white;
+    text-align: center;
+    padding-bottom: 75px;
+  }
+  .carousel .swiper-wrapper .swiper-slide .swiper_img img {
+    width: 100%;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car {
+    margin-left: 80px;
+    color: white;
+    position: relative;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car h4 {
+    font-size: 26.021px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .car_p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .car_p p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .about_car_link {
+    position: absolute;
+    bottom: 20px;
+    margin-top: 50px;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .about_car_link a {
+    color: white;
+    font-size: 18.79px;
+    font-weight: 400;
+  }
+}
+@media (max-width: 992px) {
+  .carousel {
+    padding: 60px 0;
+  }
+  .carousel .carousel_title {
+    color: white;
+    text-align: center;
+    padding-bottom: 75px;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car {
+    margin-left: 30px;
+    color: white;
+    position: relative;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car h4 {
+    font-size: 26.021px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .car_p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .car_p p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .about_car_link {
+    position: unset;
+    margin-top: 30px;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .about_car_link a {
+    color: white;
+    font-size: 18.79px;
+    font-weight: 400;
+  }
+}
+@media (max-width: 768px) {
+  .carousel .swiper-wrapper .swiper-slide .about_car {
+    margin-left: 30px;
+    color: white;
+    position: relative;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .car_p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .car_p p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .about_car_link {
+    position: unset;
+    margin-top: 30px;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .about_car_link a {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .about_car_link a img {
+    width: 25px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .carousel .swiper-wrapper .swiper-slide .about_car {
+    margin-left: 20px;
+    color: white;
+    position: relative;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .car_p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .car_p p {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .about_car_link {
+    position: unset;
+    margin-top: 20px;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .about_car_link a {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .carousel .swiper-wrapper .swiper-slide .about_car .about_car_link a img {
+    width: 20px;
+    margin-left: 10px;
+  }
+}
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
@@ -330,31 +528,35 @@ p {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: black !important;
+  background-color: white !important;
   opacity: var(--swiper-pagination-bullet-opacity, 1);
 }
 
 .swiper-pagination-bullet {
   width: 14px !important;
   height: 14px !important;
-  background-color: white !important;
+  background-color: white;
 }
 
 .footer {
   background-color: #2e363e;
   padding: 113px 0;
 }
+.footer .container .footer_wrapper .footer_logo_text {
+  display: flex;
+  flex-direction: column;
+}
 .footer .container .footer_wrapper .footer_logo_text span {
   color: #bfbfbf;
   font-size: 12px;
   font-weight: 400;
   margin-top: 14px;
+  margin-bottom: 12px;
 }
 .footer .container .footer_wrapper .footer_logo_text p {
   color: #bfbfbf;
   font-size: 11.565px;
   font-weight: 400;
-  margin-top: 19px;
 }
 .footer .container .footer_wrapper .footer_right {
   display: flex;
@@ -389,4 +591,61 @@ p {
   align-items: center;
   justify-content: right;
   gap: 33px;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 80px 0;
+  }
+  .footer .container .footer_wrapper .footer_logo_text {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .container .footer_wrapper .footer_logo_text span {
+    color: #bfbfbf;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 14px;
+    margin-bottom: 12px;
+  }
+  .footer .container .footer_wrapper .footer_logo_text p {
+    color: #bfbfbf;
+    font-size: 11.565px;
+    font-weight: 400;
+  }
+  .footer .container .footer_wrapper .footer_right {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .footer .container .footer_wrapper .footer_right .footer_number {
+    color: #fff;
+    font-size: 18.793px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .footer .container .footer_wrapper .footer_right .footer_number img {
+    margin-right: 10px;
+  }
+  .footer .container .footer_wrapper .footer_right .footer_time {
+    color: #bfbfbf;
+    font-size: 11.565px;
+    font-weight: 400;
+    margin-top: 14px;
+  }
+  .footer .container .footer_wrapper .footer_right .footer_email {
+    color: #fff;
+    font-size: 18.793px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 27px;
+  }
+  .footer .container .footer_wrapper .footer_right .footer_social_icons {
+    margin-top: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 33px;
+  }
 }/*# sourceMappingURL=style.css.map */
