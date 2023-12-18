@@ -20,92 +20,21 @@ ul {
   margin: 0 !important;
 }
 
-.colletions_area {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 575px;
-  background-color: #354249;
+.colletions {
+  background-color: #384248;
+  padding: 119px 0;
 }
-.colletions_area .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.colletions .container .collections_wrapper .colletions_title {
+  color: white;
 }
-.colletions_area .container .collections_item {
-  width: 100%;
-  top: 119.762px;
-  color: #fff;
+.colletions .container .collections_wrapper .card-1 {
   text-align: center;
-  font-family: Habibi;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.colletions_area .container .collections_item h1 {
-  text-align: left;
-  color: #fff;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.colletions_area .container .collections_item .collections {
-  width: 100%;
   display: flex;
-  height: 289.121px;
-  justify-content: space-between;
-  align-items: center;
-}
-.colletions_area .container .collections_item .collections .collect {
-  display: flex;
-  width: 100%;
-  height: 167px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-.colletions_area .container .collections_item .collections .collect img {
-  width: 100%;
-  height: 96.011px;
-  padding: 0 5px;
-}
-.colletions_area .container .collections_item .collections .collect h4 {
-  color: #fff;
-  text-align: center;
-  font-family: Inter;
-  font-size: 17.579px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  width: 100px;
-}
-@media (max-width: 613px) {
-  .colletions_area .collect img {
-    height: 50.011px !important;
-  }
-  .colletions_area .collect h4 {
-    font-size: 10.579px !important;
-    width: 70px;
-    padding: 3px;
-  }
-  .colletions_area .collections {
-    height: 120px !important;
-  }
-}
-@media (max-width: 364px) {
-  .colletions_area .collections {
-    height: 100% !important;
-    display: block !important;
-  }
-  .colletions_area .collect {
-    height: 90px !important;
-  }
-  .colletions_area .collections_item h1 {
-    text-align: center !important;
-  }
+.colletions .container .collections_wrapper .card-1 h4 {
+  margin-top: 29px;
+  color: white;
 }
 
 .drop_down {

@@ -17,99 +17,23 @@ ul {
   margin: 0 !important;
 }
 
-.colletions_area {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 575px;
-  background-color: #354249;
-
+.colletions {
+  background-color: #384248;
+  padding: 119px 0;
   .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .collections_item {
-      width: 100%;
-      // text-align: left;
-      top: 119.762px;
-      color: #fff;
-      text-align: center;
-      font-family: Habibi;
-      font-size: 36px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-
-      h1 {
-        text-align: left;
-        color: #fff;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+    .collections_wrapper {
+      .colletions_title {
+        color: white;
       }
-
-      .collections {
-        width: 100%;
+      .card-1 {
+        text-align: center;
         display: flex;
-        height: 289.121px;
-        justify-content: space-between;
-        align-items: center;
-
-        .collect {
-          display: flex;
-          width: 100%;
-          height: 167px;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-
-          img {
-            width: 100%;
-            height: 96.011px;
-            padding: 0 5px;
-          }
-
-          h4 {
-            color: #fff;
-            text-align: center;
-            font-family: Inter;
-            font-size: 17.579px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            width: 100px;
-          }
+        flex-direction: column;
+        h4 {
+          margin-top: 29px;
+          color: white;
         }
       }
-    }
-  }
-
-  @media (max-width: 613px) {
-    .collect img {
-      height: 50.011px !important;
-    }
-    .collect h4 {
-      font-size: 10.579px !important;
-      width: 70px;
-      padding: 3px;
-    }
-    .collections {
-      height: 120px !important;
-    }
-  }
-
-  @media (max-width: 364px) {
-    .collections {
-      height: 100% !important;
-      display: block !important;
-    }
-    .collect {
-      height: 90px !important;
-    }
-    .collections_item h1 {
-      text-align: center !important;
     }
   }
 }
