@@ -1,11 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
 body {
   background-color: black;
 }
 
-* {
-  transition: 0.1s ease;
-  font-family: "Inter";
-}
 li {
   list-style: none;
 }
@@ -21,17 +24,36 @@ ul {
   background-color: #384248;
   padding: 119px 0;
   .container {
+    .colletions_title {
+      color: #FFF;
+      font-family: Habibi, sans-serif;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-bottom: 62px;
+    }
+
     .collections_wrapper {
-      .colletions_title {
-        color: white;
-      }
       .card-1 {
+        margin-bottom: 20px;
         text-align: center;
-        display: flex;
-        flex-direction: column;
+        text-decoration: none !important;
+
+        img {
+          width: 113px;
+          height: 102px;
+        }
+
         h4 {
-          margin-top: 29px;
-          color: white;
+          margin-top: 31px;
+          color: #FFF;
+          text-align: center;
+          font-family: Inter;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
         }
       }
     }
@@ -124,6 +146,134 @@ ul {
 @media (max-width: 660px) {
   .drop_down {
     height: 450px;
+  }
+}
+
+// location
+
+.location_bc{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #354249;
+
+  .location_wrapper{
+      height: 100%;
+      width: 90%;
+      border: 1px solid red;
+      display: flex;
+      align-items: center;
+      
+
+
+      .img_line{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .img_line img{
+          width: 595.59px;
+          height:100%;  
+          border-radius: 14.456px;
+          background: url(<path-to-image>), 
+          lightgray 50% / cover no-repeat;
+          
+      }
+      .text_line{
+
+          height: 350px;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin: 0 auto;
+          flex-wrap: nowrap;
+
+          h5{
+              color: #FFF;
+              font-family: Inter;
+              font-size: 28px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              margin: 0;
+              margin-bottom: 18px;
+          }
+          p{
+              color: #FFF;
+              font-family: Inter;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+          }
+          .links_pg a{
+              color: #FFF;
+              font-family: Inter;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+          }
+      }
+      @media  (max-width:560px) {
+          
+          .text_line{
+              width: 100%;
+              text-align: center;
+          }
+      } 
+      .img_line{
+          height: 100%;
+          width: 100%;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+      }
+      .img_line img{
+          width: 500.59px;
+          height: 350.444px;
+          margin: 0 auto;
+      }
+      @media  (max-width:1160px) {
+          
+          .img_line{
+              margin-top: 20px;
+          }
+      } 
+      @media  (max-width:605px) {
+          
+          .img_line img{
+              width: 400.59px;
+              height: 250.444px;
+          }
+      }
+      @media  (max-width:605px) {
+          
+          .img_line img{
+              width: 300.59px;
+              height: 150.444px;
+          }
+      }  
+      
+  }
+  @media  (max-width:1160px) {
+      .location_wrapper{
+         display: block !important;
+      }
+  }
+  
+
+}  
+@media  (max-width:1160px) {
+  .location_bc{
+      height: 100%;
+      border: 1px solid red
+  }
+  .img_line{
+      margin-top: 35px;
   }
 }
 
