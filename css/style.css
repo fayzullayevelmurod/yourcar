@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 * {
   font-family: "Inter";
 }
@@ -15,6 +19,181 @@ ul {
   margin: 0 !important;
 }
 
+.colletions_area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 575px;
+  background-color: #354249;
+}
+.colletions_area .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.colletions_area .container .collections_item {
+  width: 100%;
+  top: 119.762px;
+  color: #fff;
+  text-align: center;
+  font-family: Habibi;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.colletions_area .container .collections_item h1 {
+  text-align: left;
+  color: #fff;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.colletions_area .container .collections_item .collections {
+  width: 100%;
+  display: flex;
+  height: 289.121px;
+  justify-content: space-between;
+  align-items: center;
+}
+.colletions_area .container .collections_item .collections .collect {
+  display: flex;
+  width: 100%;
+  height: 167px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.colletions_area .container .collections_item .collections .collect img {
+  width: 100%;
+  height: 96.011px;
+  padding: 0 5px;
+}
+.colletions_area .container .collections_item .collections .collect h4 {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 17.579px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 100px;
+}
+@media (max-width: 613px) {
+  .colletions_area .collect img {
+    height: 50.011px !important;
+  }
+  .colletions_area .collect h4 {
+    font-size: 10.579px !important;
+    width: 70px;
+    padding: 3px;
+  }
+  .colletions_area .collections {
+    height: 120px !important;
+  }
+}
+@media (max-width: 364px) {
+  .colletions_area .collections {
+    height: 100% !important;
+    display: block !important;
+  }
+  .colletions_area .collect {
+    height: 90px !important;
+  }
+  .colletions_area .collections_item h1 {
+    text-align: center !important;
+  }
+}
+
+.drop_down {
+  height: 375px;
+  width: 100%;
+  background-color: #354249;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.drop_down .dropdown_control {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.drop_down .dropdown_control .for_text {
+  width: 85%;
+  height: 100%;
+}
+.drop_down .dropdown_control h1 {
+  color: #fff;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  width: 96%;
+  margin: 0 auto !important;
+  margin: 25px 0 !important;
+}
+.drop_down .dropdown_control .dropdown_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.drop_down .dropdown_control .dropdown_item .drop_button_one {
+  width: 187px;
+  padding: 16.624px 21.684px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7.228px;
+  flex-shrink: 0;
+  background: #fff;
+  border: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.513);
+  margin: 5px 0;
+}
+.drop_down .dropdown_control .dropdown_item .drop_select {
+  width: 187.929px;
+  padding: 16.624px 21.684px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7.228px;
+  flex-shrink: 0;
+  color: #fff;
+  border: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.513);
+  background: #ff0000;
+  margin: 5px 0;
+}
+.drop_down .dropdown_control .dropdown_item .drop_button {
+  width: 187.929px;
+  padding: 16.624px 21.684px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7.228px;
+  flex-shrink: 0;
+  color: #fff;
+  color: black;
+  font-weight: 200;
+  border: none;
+  background-color: #fff;
+  border-left: 1px solid rgba(0, 0, 0, 0.513);
+  margin: 5px 0;
+}
+@media (max-width: 660px) {
+  .drop_down .for_text h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .drop_down {
+    height: 450px;
+  }
+}
 h2 {
   margin-bottom: 0 !important;
 }
