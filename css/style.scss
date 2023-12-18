@@ -2,79 +2,19 @@ body{
     background-color: black;
 }
 
-*{
-    font-family: "Inter";
+* {
+  font-family: "Inter";
 }
-li{
-    list-style: none
+li {
+  list-style: none;
 }
-a{
-    text-decoration: none
+a {
+  text-decoration: none;
 }
-ul{
-    padding: 0;
-    margin: 0 !important;
+ul {
+  padding: 0;
+  margin: 0 !important;
 }
-@import './parts/header';
-@import './parts/home';
-
-
-// .swiper_line {
-//     height: 957px;
-//     background-color: #2A323A;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-    
-//     .slider_tittle{
-//         align-self: stretch;
-//         color: #FFF;
-//         text-align: center;
-//         font-family: Habibi;
-//         font-size: 36px;
-//         font-style: normal;
-//         font-weight: 400;
-//         line-height: normal;
-//     }
-//     .swiper-wrapper{
-//         width: 100%;
-
-//             padding: 75px 0;
-//         .slide_item{
-//             width: 100%;
-//             border: 1px solid red;
-
-//             img{
-//                 width: 100%;
-//             }
-//             .col-4{
-//                 padding-left: 88px;
-//                 h3{
-
-//                     align-self: stretch;
-//                     color: #FFF;
-//                     font-family: Inter;
-//                     font-size: 26.021px;
-//                     font-style: normal;
-//                     font-weight: 600;
-//                     line-height: normal;
-//                     width: fit-content;
-//                 }
-//                 .left_info{
-//                     padding-top: 39px;
-//                     h4{
-//                         color: #FFF;
-//                         font-family: Inter;
-//                         font-size: 23.13px;
-//                         font-style: normal;
-//                         font-weight: 500;
-//                         line-height: normal;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
 
 
 .colletions_area{
@@ -272,3 +212,12 @@ ul{
         height: 450px;
     }
    }
+
+h2 {
+  margin-bottom: 0 !important;
+}
+@import "./parts/header";
+@import "./parts/home";
+@import "./parts/filter";
+@import "./parts/footer";
+
