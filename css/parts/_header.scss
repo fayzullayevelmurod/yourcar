@@ -1,0 +1,23 @@
+.header{
+    background-color: #2A323A;
+    padding: 21px 0;
+    .container{
+        .header_wrapper{
+            .header_links{
+                gap: 57px;
+                li{
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .header_login {
+                a{
+                    color: white;
+                }
+            }
+        }
+
+    }
+}
