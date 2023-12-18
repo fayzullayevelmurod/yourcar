@@ -2,7 +2,10 @@
   background-color: #2a323a;
   padding: 93px 0;
   .carousel_title {
-    color: white;
+    color: #fff;
+    font-family: "Inter";
+    font-size: 36px;
+    font-weight: 400;
     text-align: center;
     padding-bottom: 75px;
   }
@@ -213,6 +216,9 @@
 }
 @media (max-width: 576px) {
   .carousel {
+    .carousel_title {
+      font-size: 28px !important;
+    }
     .swiper-wrapper {
       .swiper-slide {
         display: flex;
