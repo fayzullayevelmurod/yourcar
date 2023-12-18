@@ -25,14 +25,12 @@ ul {
     height: 575px;
     background-color: #354249;
 
-
     .container{
         display: flex;
         align-items: center;
         justify-content: center;
         .collections_item{
             width: 100%;
-            // text-align: left;
             top: 119.762px;
             color: #FFF;
             text-align: center;
@@ -132,18 +130,18 @@ ul {
         align-items: center;
         justify-content: center;
         .for_text{
-            width: 85%;
+            width:fit-content;
             height: 100%;
+            margin: 0 100px;
         }
         h1{
-            
             color: #FFF;
             font-size: 36px;
             font-style: normal;
             font-weight: 400;
-            width: 96%;
-            margin: 0 auto !important;
+            width: fit-content;
             margin: 25px 0 !important;
+            text-align: left;
         }
         .dropdown_item{
             display: flex;
@@ -168,8 +166,8 @@ ul {
             .drop_select{
                 width: 187.929px;
                 padding: 16.624px 21.684px;
-                flex-direction: column;
                 justify-content: center;
+                text-align: center;
                 gap: 7.228px;
                 flex-shrink: 0;
                 color: #fff;
@@ -177,7 +175,6 @@ ul {
                 border-left: 1px solid rgba(0, 0, 0, 0.513);
                 background: #ff0000;
                 margin: 5px 0;
-
             }
             .drop_button{
                 width: 187.929px;
@@ -193,29 +190,130 @@ ul {
                 background-color: #fff;
                 border-left: 1px solid rgba(0, 0, 0, 0.513);
                 margin: 5px 0;
-
-               
             }
         }
     }
     
 
-    @media(max-width: 660px) {
-       .for_text h1{
+    @media(max-width: 1115px) {
+        .for_text h1{
+            text-align: center !important;
+            width: 100%;
+      }
+}
+
+
+@media(max-width: 660px) {
+    .drop_down{
+        height: 650px !important;
+    }
+    .for_text h1{
         font-size: 26px;
         text-align: center;
     }
-      }
+   }
 }
 @media(max-width: 660px) {
     .drop_down{
-        height: 450px;
+        height: 470px !important;
     }
    }
-
 h2 {
   margin-bottom: 0 !important;
 }
+
+.location_bc{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #354249;
+
+    .location_wrapper{
+        height: 100%;
+        width: 90%;
+        // border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+        
+
+
+
+        .img_line img{
+            width: 595.59px;
+            height: 413.444px;  
+            border-radius: 14.456px;
+            background: url(<path-to-image>), 
+            lightgray 50% / cover no-repeat;
+        }
+        .text_line{
+
+            height: 350px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0 auto;
+            
+            // height: 100%;
+
+
+            h5{
+                color: #FFF;
+                font-family: Inter;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0;
+                margin-bottom: 18px;
+            }
+            p{
+                color: #FFF;
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            .links_pg a{
+                color: #FFF;
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+        .img_line{
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+            background-color: red;
+        }
+        .img_line img{
+            width: 500.59px;
+            height: 350.444px;
+            margin: 0 auto;
+        } 
+        
+    }
+    @media  (max-width:1160px) {
+        .location_wrapper{
+           display: block !important;
+        }
+    }
+}  
+@media  (max-width:1160px) {
+    .location_bc{
+        height: 100%;
+        border: 1px solid red
+    }
+}
+
 @import "./parts/header";
 @import "./parts/home";
 @import "./parts/filter";
